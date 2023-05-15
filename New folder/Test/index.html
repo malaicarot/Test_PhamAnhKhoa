@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <h3>Hãy nhập vào 2 số a và b</h3>
+    <input id="num_a" type="text" value="0">
+    <input id="num_b" type="text" value="0"><br/>
+    <span id="result"></span><br/>
+    <input type="button" onclick="TongNguyenTo()" value="Tổng Các Số Nguyên Tố"/>
+
+    <h1>Bài 2</h1>
+    <h3>Nhập vào một số nguyên từ 1 đến 10</h3>
+    <input id="star" type="text"><br>
+    <span id="star_out"></span><br>
+    <input type="button" onclick="numberOneTriangle()" value="result"/>
+    <script>
+        function Nguyen_To(n){
+            if(n < 2 ){
+                return false;
+            }
+            for(let i = 2; i <= Math.sqrt(n); i++){
+                if(n%i==0){
+                    return false;
+                }
+            }
+            return true;
+            
+        }
+        function TongNguyenTo(){
+            let a = document.getElementById("num_a").value;
+            let b = document.getElementById("num_b").value;
+            a = Number(a);
+            b = Number(b);
+            let kt=null;
+            let sum = 0;
+            for(let i = a; i <= b; i++){
+               if(Nguyen_To(i)){
+                sum+=i;
+               }
+            }
+            let Tong = sum;
+            document.getElementById('result').innerHTML = sum;
+        }
+
+        function numberOneTriangle(){
+            let c = document.getElementById("star").vallue;
+            c = Number(c);
+            for(let i = 1; i<=c; i++){
+                let d = "*";
+            }
+            document.getElementById('result').innerHTML = d;
+
+        }
+        
+    </script>
+    
+</body>
+</html>

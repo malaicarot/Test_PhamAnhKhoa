@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     font-family: 'IBM Plex Sans', sans-serif;
+     font-family: 'Merriweather', serif;
+     background: #FFFFFF;
+
+ }
+
+ header {
+     margin-top: 80px;
+     margin-bottom: 88px;
+ }
+
+ .header .header-logo {
+     margin-left: 100px;
+     font-style: normal;
+     font-weight: 900;
+     font-size: 32px;
+     line-height: 40px;
+     color: #151B32;
+     padding-bottom: 40px;
+ }
+
+ .header .header-top {
+     display: flex;
+     gap: 400px;
+     margin-left: 100px;
+ }
+
+ .header .header-top .header-search-form {
+     border: 1px solid #BFC8E6;
+     height: 64px;
+     width: 327px;
+     border-radius: 4px;
+     padding: 16px;
+     display: flex;
+     align-items: center;
+ }
+
+ .header .header-top .header-search-form .header-search i {
+     padding-right: 12px;
+     
+ }
+
+ .header .header-top .header-search input {
+     border: none;
+     outline: none;
+ }
+
+ .header .header-top .nav-section ul {
+     display: flex;
+     list-style: none;
+     gap: 30px;
+     align-items: center;
+ }
+
+ .header .header-top .nav-section ul li {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: #151B32;
+     opacity: 0.8;
+     
+ }
+
+ .header .header-top .nav-section ul li h3 {
+     padding: 16px;
+     width: 115px;
+     height: 56px;
+     background: #849FFF;
+     border-radius: 8px;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: #FFFFFF;
+     
+
+ }
+
+ .hero .character {
+     display: grid;
+     grid-template-columns: repeat(3, 3fr);
+
+ }
+
+ .hero .character .infor {
+     width: 327px;
+     height: 208px;
+     background: #FBFCFF;
+     border-radius: 16px;
+     margin-left: 100px;
+     display: flex;
+     gap: 16px;
+ }
+
+ .hero .character .infor .character-img img {
+     width: 97px;
+     height: 97px;
+
+ }
+
+ .hero .character .infor .character-infor {
+     display: flex;
+     flex-direction: column;
+     padding: 0px;
+     gap: 16px;
+ }
+
+ .hero .character .infor .character-infor .title h1 {
+     font-style: normal;
+     font-weight: 900;
+     font-size: 18px;
+     line-height: 23px;
+     color: #151B32;
+ }
+
+ .hero .character .infor .character-infor .title p {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 21px;
+     color: #151B32;
+ }
+
+ .hero .character .infor .character-infor .hobbies {
+     display: flex;
+     gap: 4px;
+ }
+
+ .hero .character .infor .character-infor .hobbies h5 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 61px;
+     height: 22px;
+     background: #FFFFFF;
+     border: 1px solid #BFC8E6;
+     border-radius: 10px;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 18px;
+     color: #516FD5;
+ }
+
+ .hero .character .infor .character-infor .hobbies .special {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 0px;
+     gap: 4px;
+
+ }
+ .hero .character .infor .second{
+    background: #FBFCFF;
+border: 1px solid #BFC8E6;
+box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+border-radius: 16px;
+width: 500px;
+height: 208px;
+
+
+ }
